@@ -14,7 +14,7 @@
   <!-- NAVIGATION -->
   <div class="nav"></div>
   <!-- ICON PHOTO -->
-  <img src="icon.png" alt="icon" class="icon">
+  <img src="icon.png" alt="icon" class="icon" onclick="toggleNav()">
   <!--  TITLE -->
   <h1 class="title" data-text="Portofolio">Portofolio</h1>
   <!-- NAV HOME -->
@@ -59,6 +59,17 @@
   <h2 class="isiskill" data-aos="fade-down" data-aos-duration="2000">My Tech Skill</h2>
   <img src="html.png" alt="" class="htmlicon" data-aos="fade-down" data-aos-duration="2000">
   <img src="css.png" alt="" class="cssicon" data-aos="fade-down" data-aos-duration="2000">
+  <!-- NAV MOBILE -->
+  <div class="nav-mobile">
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#" onclick="homeNav()">Home</a>
+      <a href="#" onclick="aboutNav()">About Me</a>
+      <a href="#" onclick="skillNav()">Skill</a>
+    </div>
+  </div>
+  </div>
 </div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
