@@ -5,7 +5,7 @@ function scrollHome() {
   }
 }
 function scrollAbout() {
-  var targetElement = document.querySelector('.lorem');
+  var targetElement = document.querySelector('.isilorem');
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth', block: 'center'});
   }
