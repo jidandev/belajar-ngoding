@@ -189,23 +189,14 @@ body {
   color: #01fe87;
 }
 
-.lorem {
-  position: absolute;
-  color: white;
-  top: 110%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  width: 34%;
-  height: 15%;
-  overflow: hidden;
-}
 
 .isilorem {
   position: absolute;
-  left: 10px;
+  top: 100%;
+  left: 3.8%;
+  transform: translate(-50%, -50%);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(10px, 5vw, 18px);
+  font-size: clamp(5px, 4vw, 18px);
   color: white;
   text-align: left;
   font-weight: 300;
@@ -223,23 +214,14 @@ body {
   color: #01fe87;
 }
 
-.teman1 {
-  position: absolute;
-  color: white;
-  top: 110%;
-  left: 83.4%;
-  transform: translate(-50%, -50%);
-  background: transparent;
-  width: 18%;
-  height: 15%;
-  overflow: hidden;
-}
 
 .isiteman {
   position: absolute;
-  left: 10px;
+  top: 100%;
+  left: 75.1%;
+  transform: translate(-50%, -50%);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(10px, 5vw, 18px);
+  font-size: clamp(5px, 4vw, 18px);
   color: white;
   text-align: left;
   font-weight: 300;
@@ -406,7 +388,7 @@ body {
 @media only screen and (max-width: 480px) {
 
   .skill {
-    top: 130%;
+    top: 125%;
     left: 43%;
   }
 
@@ -422,49 +404,45 @@ body {
   }
   
   .isiskill {
-    top: 135%;
-    left: 35%;
+    top: 133%;
+    left: 34%;
   }
   .me {
     top: 70%;
     left: 37%;
   }
 
-  .lorem {
-    top: 85%;
-    left: 50%;
-    width: 85%;
+  .isilorem {
+    top: 75%;
+    left: 1%;
+    text-align: center;
   }
 
-  .isilorem {
-    text-align: center;
-    top: -20px;
-  }
 
   .teman {
-    top: 95%;
+    top: 90%;
     left: 28%;
   }
 
-  .teman1 {
-    top: 105%;
-    left: 50%;
+  .isiteman {
+    top: 95%;
+    left: 24%;
     width: 75%;
   }
 
   .icon1 {
-    top: 108%;
-    left: 43%;
+    top: 105%;
+    left: 44%;
   }
 
   .icon2  {
-    top: 108%;
-    left: 20%;
+    top: 105%;
+    left: 24%;
   }
 
   .icon3  {
-    top: 108%;
-    left: 66%;
+    top: 105%;
+    left: 65%;
   }
 
   .intro1 {
@@ -500,7 +478,7 @@ body {
     width: 0;
   }
   70%, 90% {
-    width: 33.5%;
+    width: 132px;
   }
 }
 
