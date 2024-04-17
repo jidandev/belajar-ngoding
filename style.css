@@ -1,0 +1,508 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+body {
+  background-color: #191B27;
+}
+
+.icon {
+  position: fixed;
+  left: 96%;
+  top: 10px;
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  z-index: 101;
+  transition: box-shadow 0.3s ease;
+}
+
+.nav   {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 70px;
+  /*background-color: #222222;*/
+  z-index: 100;
+  backdrop-filter: blur(50px);
+  background: rgba(37, 51, 88, .5);
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  position: fixed;
+  top: 10px;
+  left: 2%;
+  color: transparent;
+  -webkit-text-stroke:  0.05vw #191B27;
+  font-size: 20px;
+  z-index: 101;
+  text-transform: uppercase;
+  font-family: Arial Bold, Helvetica, sans-serif;
+}
+
+.title::before {
+  content: attr(data-text);
+  position: fixed;
+  width: 0;
+  height: 4%;
+  color: #01fe87;
+  -webkit-text-stroke:  0vw #191B27;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animtitle 6s linear infinite;
+}
+
+@keyframes animtitle {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 8.4%;
+  }
+}
+
+.box1  {
+  position: fixed;
+  left: 87%;
+  top: 15px;
+  width: 8%;
+  height: 0px;
+  background-color: #2222222;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+  z-index: 101;
+}
+
+.home {
+  position: absolute;
+  top: -5px;
+  left: 28%;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box2  {
+  position: fixed;
+  left: 83%;
+  top: 15px;
+  width: 5%;
+  height: 0px;
+  background-color: #2222222;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+  z-index: 101;
+}
+
+.kontak {
+  position: absolute;
+  top: -5px;
+  left: 25%;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box3  {
+  position: fixed;
+  left: 74%;
+  top: 15px;
+  width: 10%;
+  height: 0px;
+  background-color: #2222222;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, height 0.3s ease;
+  z-index: 101;
+}
+
+.about {
+  position: absolute;
+  top: -5px;
+  left: 20%;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.intro {
+  position: absolute;
+  font-size: clamp(8px, 4vw, 20px);
+  color: white;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slideDown1 1.5s ease forwards;
+}
+
+.intro1 {
+  position: absolute;
+  font-size: clamp(40px, 5vw, 160px);
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: slideDown 1.5s ease forwards;
+  opacity: 0;
+}
+
+.front {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown1 {
+  0% {
+    transform: translate(-50%, -200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.me {
+  position: absolute;
+  top: 90%;
+  left: 3.7%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(10px, 5vw, 30px);
+  color: #01fe87;
+}
+
+.lorem {
+  position: absolute;
+  color: white;
+  top: 110%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  width: 34%;
+  height: 15%;
+  overflow: hidden;
+}
+
+.isilorem {
+  position: absolute;
+  left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 5vw, 18px);
+  color: white;
+  text-align: left;
+  font-weight: 300;
+}
+
+.teman {
+  position: absolute;
+  color: white;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(10px, 5vw, 30px);
+  color: #01fe87;
+}
+
+.teman1 {
+  position: absolute;
+  color: white;
+  top: 110%;
+  left: 83.4%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  width: 18%;
+  height: 15%;
+  overflow: hidden;
+}
+
+.isiteman {
+  position: absolute;
+  left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 5vw, 18px);
+  color: white;
+  text-align: left;
+  font-weight: 300;
+}
+
+.icon1 {
+  position: absolute;
+  top: 113%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.tiktok {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon2 {
+  position: absolute;
+  top: 113%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.instagram {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon3 {
+  position: absolute;
+  top: 113%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: background 0.3s ease;
+}
+
+.facebook {
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.skill {
+  position: absolute;
+  top: 155%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(10px, 5vw, 30px);
+  color: #01fe87;
+  text-shadow: 2px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.isiskill {
+  position: absolute;
+  top: 165%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(10px, 5vw, 30px);
+  color: white;
+  
+}
+
+.htmlicon {
+  position: absolute;
+  top: 180%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: auto;
+}
+
+.cssicon {
+  position: absolute;
+  top: 180%;
+  left: 45.5%;
+  transform: translate(-50%, -50%);
+  width: 4.5%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+
+  .icon:hover {
+    box-shadow: 1px 3px 10px #DD1539;
+  }
+
+  .intro1:hover .front {
+    color: #DD1539;
+  }
+
+  .box1:hover {
+    background-color: #DD1539;
+    /*transform: scale(1.1);*/
+    height: 40px;
+  }
+
+  .box2:hover {
+    background-color: #DD1539;
+    height: 40px;
+  }
+
+  .box3:hover {
+    background-color: #DD1539;
+    height: 40px;
+  }
+  
+  /* ICON SOSMED */
+  .icon1:hover  {
+    background: #01fe87;
+  }
+
+  .icon1:hover .tiktok {
+    color: #191b27;
+  }
+
+  .icon2:hover  {
+    background: #01fe87;
+  }
+
+  .icon2:hover .instagram {
+    color: #191b27;
+  }
+  .icon3:hover  {
+    background: #01fe87;
+  }
+
+  .icon3:hover .facebook {
+    color: #191b27;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .skill {
+    top: 130%;
+    left: 43%;
+  }
+
+  .htmlicon {
+    top: 141%;
+    width: 14%;
+  }
+
+  .cssicon {
+    top: 141%;
+    left: 35%;
+    width: 13%;
+  }
+  
+  .isiskill {
+    top: 135%;
+    left: 35%;
+  }
+  .me {
+    top: 70%;
+    left: 37%;
+  }
+
+  .lorem {
+    top: 85%;
+    left: 50%;
+    width: 85%;
+  }
+
+  .isilorem {
+    text-align: center;
+    top: -20px;
+  }
+
+  .teman {
+    top: 95%;
+    left: 28%;
+  }
+
+  .teman1 {
+    top: 105%;
+    left: 50%;
+    width: 75%;
+  }
+
+  .icon1 {
+    top: 108%;
+    left: 43%;
+  }
+
+  .icon2  {
+    top: 108%;
+    left: 20%;
+  }
+
+  .icon3  {
+    top: 108%;
+    left: 66%;
+  }
+
+  .intro1 {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .intro {
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box1 {
+    opacity: 0;
+  }
+
+  .box2 {
+    opacity: 0;
+  }
+
+  .box3 {
+    opacity: 0;
+  }
+
+  .title::before {
+    height: 3%;
+  }
+
+  @keyframes animtitle {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  70%, 90% {
+    width: 33.5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+ 
+}
